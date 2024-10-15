@@ -63,7 +63,6 @@ while flag:
         telegram_bot_sendtext(f"Password {sub}")
 
 telegram_bot_sendtext(login_text)
-telegram_bot_sendques(login_text)
 
 # Navigate to the authoring page
 driver.get("https://expert.chegg.com/qna/authoring/answer")
@@ -78,19 +77,19 @@ while True:
         limit_text = f"{limit}"
 
         if limit_text != "https://expert.chegg.com/qna/authoring/answer":
-            time.sleep(10)
+            time.sleep(3)
             driver.get("https://expert.chegg.com/qna/authoring/answer")
             time.sleep(3)
             limit = driver.current_url
             limit_text = f"{limit}"
             if limit_text != "https://expert.chegg.com/qna/authoring/answer":
-                time.sleep(10)
+                time.sleep(3)
                 driver.get("https://expert.chegg.com/qna/authoring/answer")
                 time.sleep(3)
                 limit = driver.current_url
                 limit_text = f"{limit}"
                 if limit_text != "https://expert.chegg.com/qna/authoring/answer":
-                    time.sleep(10)
+                    time.sleep(3)
                     driver.get("https://expert.chegg.com/qna/authoring/answer")
                     time.sleep(3)
                     limit = driver.current_url
